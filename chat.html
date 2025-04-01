@@ -31,34 +31,32 @@
     }
 </script>
 <script>
+    function loadOriginalItems() {
+        //var newOrder = ["LiveChat", "Call", "Email", "BoutiqueFinder"];
+        embedded_svc.menu.reorder(["LiveChat", "Call", "Email", "BoutiqueFinder"]);
+    }
+    
     function addItem() {
         //var newOrder = ["LiveChat", "Call", "Email", "BoutiqueFinder", "AppointmentBooking"];
         embedded_svc.menu.reorder(["LiveChat", "Call", "Email", "BoutiqueFinder", "AppointmentBooking"]);
     }
-
-    function deleteItem() {
-        //var newOrder = ["LiveChat", "Call", "Email", "BoutiqueFinder", "AppointmentBooking"];
-        embedded_svc.menu.reorder(["LiveChat", "Call", "Email", "BoutiqueFinder"]);
-    }
 </script>
-<div style="position: fixed; bottom: 35px; border-radius: 40px; background: #801818; cursor: pointer; color: white">
-     <div onclick="addItem()">
+<div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+     <div onclick="loadOriginalItems()">
         <div 
            style="border-radius: 50%; float:left; margin: 5px;"
            height="50px"
            width="50px">
-           <h3 style="float:right;">Add Item</h3>
+           <button style="float:right;">Load Original Items</button>
         </div>
     </div>
-</div>
 
-<div style="position: fixed; bottom: 35px; border-radius: 40px; background: #801818; cursor: pointer; color: white">
-    <div onclick="deleteItem()">
+    <div onclick="addItem()">
         <div 
            style="border-radius: 50%; float:left; margin: 5px;"
            height="50px"
            width="50px">
-           <h3 style="float:right;">Load Original Items</h3>
+           <h3 style="float:right;">Add Item Dynamic</h3>
         </div>
     </div>
 </div>
