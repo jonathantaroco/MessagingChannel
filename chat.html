@@ -30,6 +30,7 @@
         initESW('https://service.force.com');
     }
 </script>
+    
 <script>
     function loadOriginalItems() {
         //var newOrder = ["LiveChat", "Call", "Email", "BoutiqueFinder"];
@@ -41,23 +42,14 @@
         embedded_svc.menu.reorder(["LiveChat", "Call", "Email", "BoutiqueFinder", "AppointmentBooking"]);
     }
 </script>
+    
 <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
-     <div onclick="loadOriginalItems()">
-        <div 
-           style="border-radius: 50%; float:left; margin: 5px;"
-           height="50px"
-           width="50px">
-           <button style="float:right;">Load Original Items</button>
-        </div>
+    <div onclick="loadOriginalItems()">
+        <button style="background-color: #0066cc; cursor: pointer;">Load Original Items</button>
     </div>
 
     <div onclick="addItem()">
-        <div 
-           style="border-radius: 50%; float:left; margin: 5px;"
-           height="50px"
-           width="50px">
-           <h3 style="float:right;">Add Item Dynamic</h3>
-        </div>
+        <button style="background-color: #0066cc; cursor: pointer;">Add Item Dynamic</button>
     </div>
 </div>
 </html>
