@@ -10,6 +10,9 @@
         console.log('allURLParams: ', allURLParams);*/
         console.log(embedded_svc);
         console.log(embedded_svc.menu);
+        embedded_svc.menu.utils.addEventHandler("onsecondlayer", function() {
+            console.log('onsecondlayer');
+        });
         embedded_svc.menu.settings.devMode = true;
         embedded_svc.menu.init(
             'https://richemont--livchatpoc.sandbox.my.salesforce.com',
