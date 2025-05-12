@@ -8,7 +8,9 @@
         console.log('URLSearch: ', URLSearch);
         const allURLParams = new URLSearchParams(URLSearch);
         console.log('allURLParams: ', allURLParams);*/
-
+        embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
+            console.log(prechatFormData);
+        }
         embedded_svc.menu.settings.devMode = true;
         embedded_svc.menu.init(
             'https://richemont--livchatpoc.sandbox.my.salesforce.com',
