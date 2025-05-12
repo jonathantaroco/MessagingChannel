@@ -8,7 +8,7 @@
         console.log('URLSearch: ', URLSearch);
         const allURLParams = new URLSearchParams(URLSearch);
         console.log('allURLParams: ', allURLParams);*/
-        embedded_svc.addEventHandler("onsecondlayer", function(data) {
+        embedded_svc.menu.addEventHandler("onsecondlayer", function(data) {
             console.log("onsecondlayer event was fired.");
         });
         embedded_svc.menu.settings.devMode = true;
